@@ -41,7 +41,6 @@ func main() {
 	http.HandleFunc("/upload", func(writer http.ResponseWriter, request *http.Request) {
 		switch request.Method {
 		case "POST":
-			fmt.Printf("Request: %+v\n\n", request)
 			// 10MB max memory for the form
 			if err := request.ParseMultipartForm(10 << 20); err != nil {
 				http.Error(writer, err.Error(), http.StatusBadRequest)
