@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+<h2>Hello World ++!</h2>
+<form enctype="multipart/form-data" action="/upload" method="POST">
+    <input type="text" name="auth-token" id="auth-token-id" value="{{.AuthToken}}" hidden >
+    <input type="file" name="upload" id="upload-id"><br />
+    <input type="submit">
+</form>
+</body>
+</html>
