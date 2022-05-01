@@ -4,3 +4,5 @@
 * Run `go run main.go` in the terminal and open `localhost:8080` on your browser
 
 That's it :)
+
+[**YET TO BE DONE**: Saving the file information to a DB]
